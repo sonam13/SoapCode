@@ -16,7 +16,7 @@ import com.tcs.soapCode.Service.SoapCodeService;
 @Controller
 public class SoapCodeController {
 	@Autowired SoapCodeService soapCodeService; 
-	@RequestMapping(value = "/soapCode", method = RequestMethod.POST)
+	@RequestMapping(value = "", method = RequestMethod.POST)
 	public @ResponseBody Object getResponse(@RequestBody Request request) throws UniformInterfaceException, ClientHandlerException, JSONException {
  		return soapCodeService.getResponse(request);
 	}
